@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m48-2M-L5T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlagGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-Pe-sYt" userLabel="Button1">
+                                <rect key="frame" x="107" y="191" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jLs-Pe-sYt" secondAttribute="height" multiplier="2:1" id="YH1-aC-xEK"/>
+                                </constraints>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="flagButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5U-f3-q4l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIA-sL-Opm" userLabel="Button2">
+                                <rect key="frame" x="107" y="344" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JIA-sL-Opm" secondAttribute="height" multiplier="2:1" id="QKG-ve-qBR"/>
+                                </constraints>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="flagButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tS0-Nv-AAQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-6p-5Nx" userLabel="Button3">
+                                <rect key="frame" x="107" y="495" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KMS-6p-5Nx" secondAttribute="height" multiplier="2:1" id="Na8-Q6-4j6"/>
+                                </constraints>
+                                <state key="normal" image="france"/>
+                                <connections>
+                                    <action selector="flagButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q26-ao-nKu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JIA-sL-Opm" firstAttribute="height" secondItem="jLs-Pe-sYt" secondAttribute="height" id="5Jt-ej-BxW"/>
+                            <constraint firstItem="KMS-6p-5Nx" firstAttribute="centerX" secondItem="JIA-sL-Opm" secondAttribute="centerX" id="A5i-BD-Rf1"/>
+                            <constraint firstItem="JIA-sL-Opm" firstAttribute="centerX" secondItem="jLs-Pe-sYt" secondAttribute="centerX" id="Rlx-VG-KXd"/>
+                            <constraint firstItem="KMS-6p-5Nx" firstAttribute="top" secondItem="JIA-sL-Opm" secondAttribute="bottom" constant="50" id="ScB-pl-IcG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KMS-6p-5Nx" secondAttribute="bottom" constant="30" id="WLx-eT-vm8"/>
+                            <constraint firstItem="jLs-Pe-sYt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xce-g2-Qtv"/>
+                            <constraint firstItem="JIA-sL-Opm" firstAttribute="top" secondItem="jLs-Pe-sYt" secondAttribute="bottom" constant="50" id="coR-Nw-dRj"/>
+                            <constraint firstItem="KMS-6p-5Nx" firstAttribute="height" secondItem="JIA-sL-Opm" secondAttribute="height" id="jXa-9F-xSv"/>
+                            <constraint firstItem="jLs-Pe-sYt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ukp-Kv-En0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U5G-DJ-Kb5"/>
+                    <connections>
+                        <outlet property="button1" destination="jLs-Pe-sYt" id="NS8-qm-kZK"/>
+                        <outlet property="button2" destination="JIA-sL-Opm" id="qyv-Nl-etI"/>
+                        <outlet property="button3" destination="KMS-6p-5Nx" id="Riw-HQ-EhK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R8B-Cw-KdG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m48-2M-L5T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAf-8Q-gP5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pqU-TA-7Kc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmE-Rg-hi7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
